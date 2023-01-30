@@ -50,7 +50,7 @@ function countdown(){
     }
     
     if(seconds == 0){
-      adjustTimerDisplay(--minutes, seconds = 2)
+      adjustTimerDisplay(--minutes, seconds = 60)
     }
     
     adjustTimerDisplay(minutes, --seconds)

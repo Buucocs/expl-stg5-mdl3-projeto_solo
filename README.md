@@ -4,7 +4,7 @@
 
 Projeto de um timer digital.
 
-Projeto ainda em desenvolvimento, focado em constructors e object literals
+Projeto focado em constructors e object literals
 [Clique aqui para acessar](https://buucocs.github.io/expl-stg5-mdl3-projeto_solo/)
 
 ## Tecnologias

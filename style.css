@@ -25,11 +25,10 @@
   display: grid;
   grid-template-areas: "timer buttons";
   justify-content: center;
-  align-content: center;
   align-items: center;
-  gap: clamp(10rem, 1rem + 20vw, 22.5rem);
+  gap: clamp(1rem, 0rem + 16vw, 22.5rem);
   width: clamp(80rem, 80rem + 30vw, 128rem);
-  height: clamp(60rem, 60rem + 15vh, 72rem);
+  height: 100vh;
   max-width: 100vw;
   max-height: 100vh;
 

@@ -21,6 +21,10 @@
   box-sizing: border-box;
 }
 
+body{
+  background: var(--bg-color);
+}
+
 .page{
   display: grid;
   grid-template-areas: "timer buttons";
@@ -34,13 +38,38 @@
 
   margin: 0 auto;
 
-  background: var(--bg-color);
+  position: relative;
 }
 
 button{
   cursor: pointer;
   border: none;
   background: none;
+}
+
+.hide{
+  display: none;
+}
+
+.selected-card{
+  --card-primary-color: #FFFFFF;
+  --card-bg-primary-color: #02799D;
+}
+
+.dark-theme{
+  --bg-color: #121214;
+  --fc-timer: #FFFFFF;
+  --card-primary-color: #C4C4CC;
+  --card-bg-primary-color: #29292E;
+  --card-secondary-color: #FFFFFF;
+  --card-bg-secondary-color: #0A3442;
+
+}
+
+header{
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
 }
 
 main{
@@ -81,20 +110,48 @@ aside{
   place-content: center; 
 }
 
+.card-container{
+  position: relative;
+}
+
+.slider-container{
+  z-index: 1;
+  position: absolute;
+  width: 9rem;
+  bottom: 3rem;
+  left: 2.4rem;
+  outline: none;
+}
+
+.slider{
+  width: 100%;
+  cursor: grab;
+  appearance: none;
+  outline: none;
+  height: 0.4rem;
+  border-radius: 0.5rem;
+  background-color: var(--card-primary-color);
+}
+
+.slider::-webkit-slider-thumb{
+  appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-color: var(--card-primary-color);
+  outline: none;
+}
+
+.slider:active{
+  cursor: grabbing;
+}
+
 .card svg path:nth-child(1){
   fill: var(--card-bg-primary-color);
 }
 
 .card svg path:nth-child(2){
   fill: var(--card-primary-color);
-}
-
-.selected-card svg path:nth-child(1){
-  fill: var(--card-bg-secondary-color);
-}
-
-.selected-card svg path:nth-child(2){
-  fill: var(--card-secondary-color);
 }
 
 @media (max-width: 800px){
@@ -116,4 +173,9 @@ aside{
   aside{
     height: fit-content;
   }
+
+  header{
+   display: none;
+  }
+  
 }

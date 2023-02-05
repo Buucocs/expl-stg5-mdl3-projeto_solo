@@ -1,20 +1,26 @@
-# Rocketseat Explorer - Stage 02 Projeto Solo
+# Rocketseat Explorer - Stage 05 Module 03
 
-![preview](./github/preview_expl-stg5-mdl3-projeto_solo.png)
+![preview](./github/preview_expl-stg5-mdl3-projeto_solo.gif)
 
-Projeto de um timer digital.
+Digital timer project.
 
-Projeto focado em constructors e object literals
-[Clique aqui para acessar](https://buucocs.github.io/expl-stg5-mdl3-projeto_solo/)
+The concepts used in this project:
 
-## Tecnologias
+- ES6 Modules;
+- Modulation;
+- Refactoring;
+- Factory pattern
+
+[Click here to acess](https://buucocs.github.io/expl-stg5-mdl3-projeto_solo/)
+
+## Technology
 
 - HTML
 - CSS
 - javaScript
-- Git e Github
+- Git and Github
 
-## Contato
+## Contact
 
 - contato@leonardohgomes.com.br
 - @leonardohgomes_

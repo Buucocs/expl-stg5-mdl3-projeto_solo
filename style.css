@@ -162,6 +162,7 @@ aside{
     gap: clamp(2rem, 2rem + 50vh, 5rem);
     width: 100vw;
     max-height: 100vh;
+    height: none;
 
     padding: 0;
   }

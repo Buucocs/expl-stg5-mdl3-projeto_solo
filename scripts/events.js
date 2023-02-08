@@ -25,6 +25,10 @@ export function Events({
   Cards.second.slider.addEventListener('mousemove', () => {controlAudioVolume(Cards.second)})
   Cards.third.slider.addEventListener('mousemove', () => {controlAudioVolume(Cards.third)})
   Cards.fourth.slider.addEventListener('mousemove', () => {controlAudioVolume(Cards.fourth)})
+  Cards.first.slider.addEventListener('touchmove', () => {controlAudioVolume(Cards.first)})
+  Cards.second.slider.addEventListener('touchmove', () => {controlAudioVolume(Cards.second)})
+  Cards.third.slider.addEventListener('touchmove', () => {controlAudioVolume(Cards.third)})
+  Cards.fourth.slider.addEventListener('touchmove', () => {controlAudioVolume(Cards.fourth)})
   ThemeButtons.light.addEventListener('click', changeTheme)
   ThemeButtons.dark.addEventListener('click', changeTheme)
 }
